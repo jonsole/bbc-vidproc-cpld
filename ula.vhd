@@ -199,7 +199,7 @@ begin
 					crtc_disen <= DISEN;
                 else
                     -- Clock shift register and input '1' at LSB
-                    pixel_reg <= pixel_reg(6 downto 0) & 1;
+                    pixel_reg <= pixel_reg(6 downto 0) & '1';
                 end if;
             end if;
         end if;
